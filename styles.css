@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav{
+    visibility: hidden;
+    width: 100%;
+    height: 2.4rem;
+}
+
+.main{
+    display: block;
+    margin: auto;
+    padding: 1.5rem 0;
+    width: 80%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    
+
+}
+
+.top-section{
+padding: 1rem;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin: auto;
+justify-content: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+width: 50%;
+margin:auto;
+position: relative;
+bottom: 2rem;
+}
+
+.header h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 900;
+    text-align: center;
+    width: 70%;
+}
+.header p{
+    width: 70%;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings-wrapper{
+    width:50%;
+    align-items: center;
+    margin: auto;
+    display:block ;
+    margin-top: 3rem;
+}
+
+.rating{
+  margin-bottom: 1rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding: 10px 6px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  width: 350px;
+  min-width: 100px;
+  height: 8vh;
+  min-height: 50px;
+  overflow: hidden;
+  font-weight: 800;
+  color: hsl(300, 43%, 22%);
+}
+
+.rating .bold{
+    padding-left: 1rem;
+}
+.one{
+    position: relative;
+
+
+}
+.two{
+    position: relative;
+    left: 3rem;
+}
+.three{
+    position: relative;
+    left: 6rem;
+
+}
+.reviews-wrapper{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.review-wrapper{
+    display: block;
+    padding: 10px;
+    align-items: center;
+    margin: 0.6rem;
+    width: 30%;
+    min-width: 240px ;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.top{
+  
+}
+.middle{
+    position: relative;
+    top: 2rem;
+}
+
+.bottom{
+    position: relative;
+    top: 4rem;
+}
+
+.img-text-wrapper{
+  display:flex;
+  flex-direction: row;  
+  align-items: center;
+}
+
+.username{
+    display: block;
+}
+
+.username h4{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-bottom: 2px;
+} 
+.username p{
+    margin: 0;
+    color: hsl(333, 80%, 67%);
+    text-align: center;
+}
+.review-content{
+    padding: 5px;
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+}
+
+.image-icon{
+    width:60px ;
+    padding: 0.5rem;
+    margin-right:10px ;
+    float: left;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 769px){
+
+    .nav{
+        height: 6rem;
+    }
+
+.main{
+    margin: auto 2rem;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 100%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.rating{
+    margin-bottom: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    overflow: hidden;
+    font-weight: 800;
+    color: hsl(300, 43%, 22%);
+  }
+  
+  .rating .bold{
+      text-align: center;
+      margin-top: 10px;
+  }
+
+        .one{
+            position: relative;
+        
+        
+        }
+        .two{
+            position: relative;
+            left: 0;
+        }
+        .three{
+            position: relative;
+            left: 0;
+        }
+
+        
+  .reviews-wrapper{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.review-wrapper{
+    display: block;
+    padding: 1rem;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 80% ;
+    border-radius: 0.8rem;
+    background-color: hsl(300, 43%, 22%);
+}     
+
+
+}
+
+@media screen and (max-width: 414px) {
+   
+    .nav{
+        height: 4rem;
+    }
+
+
+    .main{
+        margin: auto;
+        justify-content: center;
+        padding: 0.5rem;
+        width: 100%;
+        height: auto;
+        background-color: hsl(0, 0%, 100%);
+        
+    
+    }
+
+    .top-section{
+        display: block;
+        padding: 1rem;
+        margin: auto;
+        }
+
+        .header{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin:auto;
+        align-items: center ;
+        position: relative;
+        bottom: 2rem;
+        }    
+      
+        
+.header h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+}
+.header p{
+    margin: auto;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(303, 10%, 53%);
+}
+
+        .ratings-wrapper{
+            width:100%;
+            align-items: center;
+            margin: auto;
+            display: block;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        
+.rating{
+    margin-bottom: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    overflow: hidden;
+    font-weight: 800;
+    color: hsl(300, 43%, 22%);
+  }
+  
+  .rating .bold{
+      text-align: center;
+      margin-top: 10px;
+  }
+
+        .one{
+            position: relative;
+        
+        
+        }
+        .two{
+            position: relative;
+            left: 0;
+        }
+        .three{
+            position: relative;
+            left: 0;
+        }
+
+  .reviews-wrapper{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.review-wrapper{
+    display: block;
+    padding: 1rem;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 80% ;
+    border-radius: 0.8rem;
+    background-color: hsl(300, 43%, 22%);
+}      
+        
+}
